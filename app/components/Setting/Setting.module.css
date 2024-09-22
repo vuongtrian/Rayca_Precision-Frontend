@@ -128,13 +128,69 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 0.4rem; /* Adjust size for inner dot */
+  width: 0.4rem;
   height: 0.4rem;
   border-radius: 50%;
-  background-color: white; /* White inner dot */
+  background-color: white;
   transform: translate(-50%, -50%);
 }
 
 .configurationOptionRadiusBtn input[type="radio"]:hover {
-  border-color: #999; /* Change the border color on hover */
+  border-color: #999;
+}
+
+/* ================ Responsive ================ */
+@media screen and (max-width: 800px) {
+  .configurationOptionContent {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
+  .configurationOptionRadiusBtn {
+    margin-right: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .configurationOptionContent {
+    padding: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .configurationOptionImage {
+    width: 4.5rem;
+    height: 3.5rem;
+  }
+  .configurationOptionContent {
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+  }
+  .configurationOptionRadiusBtn {
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .configurationOptionImage {
+    width: 4.5rem;
+    height: 3.5rem;
+  }
+  .configurationOptionContent {
+    margin-left: 0.7rem;
+  }
+  .configurationOptionRadiusBtn {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .configurationOption {
+    grid-template-columns: 1fr;
+  }
+  .configurationOptionContent {
+    padding: 1rem;
+  }
+  .configurationOptionRadiusBtn {
+    padding: 1rem;
+  }
 }

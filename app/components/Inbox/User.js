@@ -28,7 +28,7 @@ function User({
         <div className={`${styles.userAvatar} ${getAvatarClass(avatar)}`}>
           {avatar}
         </div>
-        <div>
+        <div className={styles.userCommon}>
           <span className={styles.userName}>{username}</span>
           <span className={styles.userEmail}>{email}</span>
         </div>

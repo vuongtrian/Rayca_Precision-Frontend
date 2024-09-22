@@ -28,9 +28,12 @@
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   color: var(--subtext-color);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .accountInfo a {
+  margin-left: 0.5rem;
   color: var(--selected-color);
 }
 
@@ -59,4 +62,21 @@
   display: inline-block;
   border-radius: 50%;
   margin-right: 5px;
+}
+
+/* ================ Responsive ================ */
+@media screen and (max-width: 768px) {
+  .header {
+    grid-template-columns: 80% 20%;
+  }
+
+  .accountInfo a {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    grid-template-columns: 70% 30%;
+  }
 }
