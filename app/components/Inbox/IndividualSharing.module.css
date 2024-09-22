@@ -1,0 +1,190 @@
+.individualSharing {
+  margin-top: var(--mb-2-5);
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+  align-items: center;
+  margin: var(--mb-0-75) 0;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px var(--subtext-color);
+  border-radius: 7px;
+  padding: 5px;
+  width: 81%;
+}
+
+.selectedUser {
+  display: flex;
+  align-items: center;
+  background-color: #2d2d2d;
+  padding: 0 5px;
+  border-radius: 20px;
+  margin-right: 1rem;
+  border: 1px solid #444; /* Optional to create a border */
+  height: 1.5rem;
+}
+
+.avatar {
+  background-color: #61a9f7; /* Light blue background for avatar */
+  color: white;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  font-size: var(--user-avatar-font-size);
+}
+
+.searchInput {
+  background-color: transparent;
+  border: none;
+  color: var(--subtext-color);
+  width: 100%;
+}
+
+.searchInputValue {
+  width: 7rem;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.username {
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: var(--smaller-font-size);
+  cursor: pointer;
+}
+
+.removeBtn:hover {
+  color: #fff;
+}
+
+.accessLevel {
+  background-color: transparent;
+  color: var(--subtext-color);
+  border: none;
+  outline: none;
+  height: 1.5rem;
+  width: auto;
+  min-width: fit-content;
+  text-align: end;
+  padding-right: 7px;
+}
+
+.accessLevel:hover {
+  color: #999;
+}
+
+.shareAccessBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--selected-color);
+  color: white;
+  border: none;
+  padding: 0.7rem 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: var(--normal-font-size);
+  width: 17%;
+}
+
+.shareAccessBtn:hover {
+  background-color: #3574e9;
+}
+
+.shareAccessBtnIcon {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5rem;
+}
+
+.usersHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0.7rem 0.8rem 0.7rem;
+  color: var(--subtext-color);
+  font-size: var(--small-font-size);
+  border-bottom: 1px solid var(--subtext-color);
+}
+
+.userRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0.7rem;
+  border-bottom: 1px solid var(--subtext-color);
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: var(--normal-font-size);
+}
+
+.userAvatar {
+  font-size: 16px;
+  background-color: #61a9f7;
+  color: white;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 0.45rem;
+  font-size: var(--small-font-size);
+}
+
+.userAvatarJ {
+  background-color: #18bde9;
+}
+
+.userAvatarN {
+  background-color: #8755f8;
+}
+
+.userAvatarA {
+  background-color: #f5b900;
+}
+
+.userName {
+  margin-right: 0.5rem;
+}
+
+.userEmail {
+  color: var(--subtext-color);
+}
+
+.accessLevelSelect {
+  background-color: transparent;
+  color: var(--subtext-color);
+  border: none;
+  outline: none;
+  font-size: var(--small-font-size);
+  min-width: fit-content;
+  text-align: end;
+  padding-right: 7px;
+}
+
+.accessLevelSelect:hover {
+  color: #999;
+}

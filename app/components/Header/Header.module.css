@@ -1,0 +1,62 @@
+.header {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  margin-bottom: var(--mb-2);
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-0-75);
+}
+
+.accountIcon {
+  background-color: #fff;
+  border-radius: 30%;
+  width: 2rem;
+  height: 2rem;
+  padding: 3px;
+  margin-right: 0.5rem;
+}
+
+.accountEmail {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+}
+
+.accountInfo p {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--subtext-color);
+}
+
+.accountInfo a {
+  color: var(--selected-color);
+}
+
+.accountInfo a:hover {
+  color: #3574e9;
+}
+
+.status {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.statusContent {
+  background-color: var(--tab-active-color);
+  padding: 5px;
+  border-radius: 0.5rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.statusIndicator {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(99, 216, 99);
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 5px;
+}

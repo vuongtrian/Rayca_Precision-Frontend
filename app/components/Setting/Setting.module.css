@@ -1,0 +1,140 @@
+.settingTabs {
+  display: flex;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--subtext-color);
+  border-bottom: solid 1px var(--subtext-color);
+}
+
+.settingTabButton {
+  cursor: pointer;
+  padding: 0.8rem 0.45rem;
+  display: flex;
+  align-items: center;
+}
+
+.settingTabButton span {
+  background-color: #a3a3a328;
+  margin-left: 0.5rem;
+  padding: 1px 2px;
+  font-size: 11px;
+  border: solid 0.5px #999;
+  border-radius: 5px;
+}
+
+.settingTabIcon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.settingTabActive {
+  color: var(--selected-color);
+  border-bottom: solid 1px var(--selected-color);
+  margin-bottom: -1px;
+}
+
+.settingTabActive span {
+  border-color: var(--selected-color);
+}
+
+.generalSetting {
+  padding-top: var(--mb-2-5);
+  padding-bottom: var(--mb-1-5);
+  border-bottom: solid 1px var(--subtext-color);
+}
+
+.configurationOptions {
+  margin: var(--mb-1) 0;
+}
+
+.configurationOption {
+  display: grid;
+  grid-template-columns: 10% 80% 5%;
+  column-gap: 1rem;
+  align-items: center;
+  border: solid 1px var(--subtext-color);
+  border-radius: 0.8rem;
+  margin-bottom: var(--mb-0-5);
+  cursor: pointer;
+}
+
+.selectedOption {
+  border-color: var(--selected-color);
+  background-color: var(--tab-active-color);
+
+  .configurationOptionImage {
+    background-color: #407ef24c;
+  }
+}
+
+.configurationOptionImage {
+  width: 4.8rem;
+  height: 3.8rem;
+  margin: 0.5rem;
+  background-color: #6e707538;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.configurationOptionContent {
+  .configurationOptionContent_plus {
+    background-color: #5f522c;
+    border: solid 1px #8b7941;
+    border-radius: 0.3rem;
+    margin-left: 0.7rem;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    padding: 0.2rem 0.4rem;
+  }
+  .configurationOptionContent_subcontent {
+    display: block;
+    word-wrap: break-word;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: var(--subtext-color);
+    margin-top: 3px;
+  }
+}
+
+.configurationOptionRadiusBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.configurationOptionRadiusBtn input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: solid 1px var(--subtext-color);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: relative;
+  outline: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.configurationOptionRadiusBtn input[type="radio"]:checked {
+  background-color: var(--selected-color);
+  border: none;
+}
+
+.configurationOptionRadiusBtn input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.4rem; /* Adjust size for inner dot */
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: white; /* White inner dot */
+  transform: translate(-50%, -50%);
+}
+
+.configurationOptionRadiusBtn input[type="radio"]:hover {
+  border-color: #999; /* Change the border color on hover */
+}
